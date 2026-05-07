@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayaan Kwatla | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+      color:#cbd5e1;
+    }
+
+    nav{
+      background:#1e293b;
+      padding:12px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      padding:50px 10%;
+    }
+
+    .about, .projects, .contact{
+      margin-bottom:40px;
+    }
+
+    h2{
+      color:#0f172a;
+      margin-bottom:20px;
+      border-bottom:3px solid #38bdf8;
+      display:inline-block;
+      padding-bottom:5px;
+    }
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#0f172a;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:20px;
+    }
+
+    .skill{
+      background:#38bdf8;
+      color:white;
+      padding:8px 15px;
+      border-radius:20px;
+      font-size:14px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    .contact p{
+      margin:10px 0;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:32px;
+      }
+
+      section{
+        padding:40px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ayaan Kwatla</h1>
+    <p>ENTC Student | Electronics & Technology Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am <strong>Ayaan Kwatla</strong>, an ENTC student passionate about electronics,
+      embedded systems, and innovative technology solutions. I enjoy building practical
+      projects using Arduino, ICs, and software applications.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>UAV Project</h3>
+        <p>
+          Designed and worked on a basic UAV system focusing on flight control,
+          stability, and wireless communication concepts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Traffic Light using 555 Timer IC</h3>
+        <p>
+          Built a traffic light control circuit using 555 Timer IC to generate
+          timed switching signals for LEDs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Morse Code Generator using Arduino</h3>
+        <p>
+          Developed a Morse code generator using Arduino to convert text into
+          Morse signals through buzzer and LED outputs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nursing App</h3>
+        <p>
+          Created a healthcare-focused nursing application concept for assisting
+          patient management and nursing activities.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Arduino</div>
+      <div class="skill">Electronics</div>
+      <div class="skill">Embedded Systems</div>
+      <div class="skill">Circuit Design</div>
+      <div class="skill">C Programming</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <p><strong>Name:</strong> Ayaan Kwatla</p>
+    <p><strong>Field:</strong> ENTC Engineering</p>
+    <p><strong>Email:</strong> your-email@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ayaan Kwatla | Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
